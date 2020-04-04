@@ -4,7 +4,7 @@ Serial pc( USBTX, USBRX );
 
 int main(){
     t.start();
-    pc.printf("Hello from the other side\n");
+    pc.printf("Hello from the other side\r\n");
     t.stop();
-    pc.printf("The time taken was %f seconds\n", t.read());
+    pc.printf("The time taken was %f seconds\r\n", t.read());
 }
